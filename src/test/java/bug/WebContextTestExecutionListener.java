@@ -14,7 +14,6 @@ public class WebContextTestExecutionListener extends AbstractTestExecutionListen
 			GenericApplicationContext context = (GenericApplicationContext) testContext.getApplicationContext();
 			ConfigurableListableBeanFactory beanFactory = context.getBeanFactory();
 			beanFactory.registerScope("request", new SimpleThreadScope());
-			beanFactory.registerScope("session", new SimpleThreadScope());
 		}
 	}
 }

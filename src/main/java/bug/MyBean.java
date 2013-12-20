@@ -1,5 +1,5 @@
 package bug;
 
-public class MyBean {
+public abstract class MyBean {
 
 }

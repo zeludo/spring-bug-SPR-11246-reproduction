@@ -12,14 +12,10 @@
 		id="myBean"
 		factory-bean="myBeanFactory"
 		factory-method="myBeanFactoryMethod"
-		scope="request" 
-		lazy-init="false">
+		scope="request" >
 		<aop:scoped-proxy proxy-target-class="true" />
 	</bean>
 
 	<context:component-scan base-package="bug" />
 	<context:annotation-config />
-	<aop:aspectj-autoproxy />
-	<context:load-time-weaver aspectj-weaving="on"/>
-	
 </beans>

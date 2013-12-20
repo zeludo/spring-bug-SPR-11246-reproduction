@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 public class MyBeanImplementationA extends MyBean {
 
 	@Autowired
-	private FieldOnlyUsedOnImplementationA onlyOnImplementationA;
+	FieldOnlyUsedOnImplementationA onlyOnImplementationA;
 
 }

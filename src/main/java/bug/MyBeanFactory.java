@@ -7,14 +7,13 @@ import org.springframework.stereotype.Component;
 public class MyBeanFactory {
 
 	@Autowired
-	private MyBeanImplementationA myBeanImplementationA;
+	MyBeanImplementationA myBeanImplementationA;
 	@Autowired
-	private MyBeanImplementationB myBeanImplementationB;
+	MyBeanImplementationB myBeanImplementationB;
 
 	int i = 0;
 
 	public MyBean myBeanFactoryMethod() {
-		// Simulates a request context factory
 		return i++ % 2 == 0 ? myBeanImplementationA : myBeanImplementationB;
 	}
 
